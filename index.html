@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <title>Reservacion de Cabañas</title>
+</head>
+
+<body>
+    <h1>Categorias</h1>
+    <fieldset style="width: 30%">
+        <legend>Informacion de Categorias</legend>
+        <table>
+            <div id="resultado1"></div>
+            <script type="text/javascript"> 
+            window.onload = mostrarCategoria();
+            </script>
+            <div>
+                <input type="text" id="nameCategory" placeholder="name">
+                <input type="text" id="descriptionCategory" placeholder="descripcion">
+            </div>
+            <button onclick="guardarInformacionCategoria()">Guardar Categoria</button>
+        </table>
+    </fieldset>
+
+
+
+    <h1>Cabañas</h1>
+    <fieldset style="width: 30%">
+        <legend>Informacion de Cabañas</legend>
+        <table>
+            <div id="resultado2"></div>
+            <script type="text/javascript"> 
+            window.onload = mostrarCabin();
+            </script>
+            <div>
+                <input type="text" id="nameCabin" placeholder="name">
+                <input type="text" id="brandCabin" placeholder="brand">
+                <input type="number" id="roomsCabin" placeholder="rooms">
+                <input type="text" id="descriptionCabin" placeholder="description">
+            </div>
+            <button onclick="guardarInformacionCabin()">Guardar Cabañas</button>
+        </table>
+    </fieldset>
+</body>
+
+<body>
+    <h1>Clientes</h1>
+    <fieldset style="width: 30%">
+        <legend>Informacion de Clientes</legend>
+        <table>
+            <div id="resultado3"></div>
+            <script type="text/javascript"> 
+            window.onload = mostrarCliente();
+            </script>
+            <div>
+                <input type="text" id="emailClient" placeholder="email">
+                <input type="number" id="passwordClient" placeholder="password">
+                <input type="text" id="nameClient" placeholder="name">
+                <input type="number" id="ageClient" placeholder="age">
+            </div>
+            <button onclick="guardarInformacionCliente()">Guardar Cliente</button>
+        </table>
+    </fieldset>
+
+    <h1>Mensaje</h1>
+    <fieldset style="width: 30%">
+        <legend>Informacion de mensajes</legend>
+        <table>
+            <div id="resultado4"></div>
+            <script type="text/javascript"> 
+            window.onload = mostrarMensaje();
+            </script>
+            <div>
+                <input type="text" id="messageText" placeholder="messageText">
+            </div>
+            <button onclick="guardarInformacionMensaje()">Guardar Mensaje</button>
+        </table>
+    </fieldset>
+
+    <h1>Reservaciones</h1>
+    <fieldset style="width: 30%">
+        <legend>Informacion de reservacion</legend>
+        <table>
+            <div id="resultado5"></div>
+            <script type="text/javascript"> 
+            window.onload = mostrarReservacion();
+            </script>
+            <div>
+                <input type="date" id="startDate" placeholder="startDate">
+                <input type="date" id="devolutionDate" placeholder="devolutionDate">
+            </div>
+            <button onclick="guardarInformacionReservacion()">Guardar Reservacion</button>
+        </table>
+    </fieldset>
+
+    <h1>Reportes</h1>
+    <fieldset style="width: 30%">
+        <legend>Generacion de reportes</legend>
+        <table>
+            <div id="resultadoDate"></div>
+            <div id="resultadoCliente"></div>
+            <div id="resultadoStatus"></div>
+            <script type="text/javascript"> 
+            </script>
+            <div>
+                <input type="date" id="RstartDate" placeholder="descripcion">
+                <input type="date" id="RdevolutionDate" placeholder="descripcion">
+            </div>
+            <button onclick="traerReporteDate()">Generar reporte por fecha</button>
+            <button onclick="traerReporteCliente()">Generar reporte por clientes</button>
+            <button onclick="traerReporteStatus()">Generar reporte de Status de Reservaciones</button>
+        </table>
+    </fieldset>
+</body>
+</body>
+
+</html>
